@@ -6,7 +6,8 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
 1. EC2 Instance 
    - With Internet Access
    - Security Group with Port `8080` open for internet
-1. Java v1.8.x 
+   - check java version and rmove if < 8
+2. Java v1.8.x 
 
 ## Install Java
 1. We will be using open java for our demo, Get the latest version from http://openjdk.java.net/install/
@@ -15,7 +16,7 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    #yum -y install java-1.8.0-openjdk-devel
    ```
 
-1. Confirm Java Version and set the java home
+2. Confirm Java Version and set the java home
    ```sh
    java -version
    find /usr/lib/jvm/java-1.8* | head -n 3
@@ -70,11 +71,11 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
 
 ### Test Jenkins Jobs
 1. Create “new item”
-1. Enter an item name – `My-First-Project`
+2. Enter an item name – `My-First-Project`
    - Chose `Freestyle` project
-1. Under the Build section
+3. Under the Build section
 	Execute shell: echo "Welcome to Jenkins Demo"
-1. Save your job 
-1. Build job
-1. Check "console output"
+4. Save your job 
+5. Build job
+6. Check "console output"
 
